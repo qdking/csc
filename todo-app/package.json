@@ -1,0 +1,14 @@
+{
+  "name": "maple-cass-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "if-env TYPE=server && server && (cd server && npm install) || (cd client && npm install)",
+    "server": "node ./server/server.js",
+    "client": "cd client && npm start"
+  },
+  "author": "",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
